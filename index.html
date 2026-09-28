@@ -1,123 +1,176 @@
 <!DOCTYPE html>
 <html lang="id">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Biodata Saya</title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Biodata Bella</title>
 
     <style>
-      body {
-        font-family: Arial, sans-serif;
-        background: linear-gradient(135deg, #f8d9ff, #d9e7ff);
-        margin: 0;
-        padding: 40px;
-      }
+        * {
+            box-sizing: border-box;
+        }
 
-      .container {
-        max-width: 600px;
-        margin: auto;
-        background: white;
-        padding: 30px;
-        border-radius: 20px;
-        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
-        text-align: center;
-      }
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #e8d5ff, #ffd6ec);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
 
-      .foto {
-        width: 140px;
-        height: 140px;
-        border-radius: 50%;
-        object-fit: cover;
-        border: 4px solid #c77dff;
-        margin-bottom: 15px;
-      }
+        .container {
+            width: 90%;
+            max-width: 650px;
+            background-color: white;
+            padding: 35px;
+            border-radius: 25px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+            text-align: center;
+        }
 
-      h1 {
-        color: #7b2cbf;
-        margin-bottom: 5px;
-      }
+        .foto {
+            width: 160px;
+            height: 160px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 5px solid #c77dff;
+            margin-bottom: 15px;
+        }
 
-      h3 {
-        color: #555;
-        font-weight: normal;
-      }
+        h1 {
+            margin: 5px 0;
+            color: #7b2cbf;
+            font-size: 30px;
+        }
 
-      .biodata {
-        text-align: left;
-        margin-top: 25px;
-      }
+        .status {
+            color: #777;
+            margin-bottom: 30px;
+        }
 
-      .biodata p {
-        padding: 10px;
-        border-bottom: 1px solid #eee;
-      }
+        .biodata {
+            text-align: left;
+        }
 
-      .label {
-        font-weight: bold;
-        color: #7b2cbf;
-        display: inline-block;
-        width: 150px;
-      }
+        .data {
+            display: flex;
+            padding: 13px 5px;
+            border-bottom: 1px solid #eeeeee;
+        }
 
-      footer {
-        margin-top: 25px;
-        color: #777;
-        font-size: 14px;
-      }
+        .label {
+            width: 180px;
+            font-weight: bold;
+            color: #7b2cbf;
+        }
+
+        .isi {
+            flex: 1;
+            color: #444;
+        }
+
+        .tentang {
+            margin-top: 25px;
+            padding: 20px;
+            background-color: #f8efff;
+            border-radius: 15px;
+            text-align: left;
+        }
+
+        .tentang h2 {
+            color: #7b2cbf;
+            margin-top: 0;
+        }
+
+        .tentang p {
+            color: #555;
+            line-height: 1.6;
+        }
+
+        footer {
+            margin-top: 25px;
+            color: #888;
+            font-size: 14px;
+        }
     </style>
-  </head>
+</head>
 
-  <body>
+<body>
+
     <div class="container">
-      <!-- Foto -->
-      <img src="foto.jpg" class="foto" alt="Foto Saya" />
 
-      <h1>Jenifa Bella Goncalves</h1>
-      <h3>Mahasiswi Teknologi Informasi</h3>
+        <!-- FOTO BELLA -->
+        <img src="bella2.jpg" class="foto" alt="Foto Bella">
 
-      <div class="biodata">
-        <p>
-          <span class="label">Nama</span>
-          : Jenifa Bella Goncalves
-        </p>
+        <!-- NAMA -->
+        <h1>Jenifa Bella Goncalves</h1>
+        <p class="status">Mahasiswi Teknologi Informasi</p>
 
-        <p>
-          <span class="label">NIM</span>
-          : Isi NIM Kamu
-        </p>
+        <!-- BIODATA -->
+        <div class="biodata">
 
-        <p>
-          <span class="label">Program Studi</span>
-          : Teknologi Informasi
-        </p>
+            <div class="data">
+                <div class="label">Nama Lengkap</div>
+                <div class="isi">Jenifa Bella Goncalves</div>
+            </div>
 
-        <p>
-          <span class="label">Fakultas</span>
-          : Fakultas Pertanian Sains dan Kesehatan
-        </p>
+            <div class="data">
+                <div class="label">NIM</div>
+                <div class="isi">Isi NIM Kamu</div>
+            </div>
 
-        <p>
-          <span class="label">Universitas</span>
-          : Universitas Timor
-        </p>
+            <div class="data">
+                <div class="label">Program Studi</div>
+                <div class="isi">Teknologi Informasi</div>
+            </div>
 
-        <p>
-          <span class="label">Tempat, Tanggal Lahir</span>
-          : Isi sesuai data kamu
-        </p>
+            <div class="data">
+                <div class="label">Fakultas</div>
+                <div class="isi">Pertanian Sains dan Kesehatan</div>
+            </div>
 
-        <p>
-          <span class="label">Alamat</span>
-          : Isi alamat kamu
-        </p>
+            <div class="data">
+                <div class="label">Universitas</div>
+                <div class="isi">Universitas Timor</div>
+            </div>
 
-        <p>
-          <span class="label">Email</span>
-          : Isi email kamu
-        </p>
-      </div>
+            <div class="data">
+                <div class="label">Tempat, Tanggal Lahir</div>
+                <div class="isi">Isi sesuai data</div>
+            </div>
 
-      <footer>© 2026 Biodata Saya</footer>
+            <div class="data">
+                <div class="label">Alamat</div>
+                <div class="isi">Isi alamat kamu</div>
+            </div>
+
+            <div class="data">
+                <div class="label">Email</div>
+                <div class="isi">Isi email kamu</div>
+            </div>
+
+        </div>
+
+        <!-- TENTANG SAYA -->
+        <div class="tentang">
+            <h2>Tentang Saya</h2>
+
+            <p>
+                Halo, saya Jenifa Bella Goncalves.
+                Saya adalah mahasiswi Program Studi Teknologi Informasi
+                di Universitas Timor. Saya tertarik dengan teknologi,
+                terutama dalam pembuatan website dan aplikasi.
+            </p>
+        </div>
+
+        <footer>
+            © 2026 Jenifa Bella Goncalves
+        </footer>
+
     </div>
-  </body>
+
+</body>
 </html>
